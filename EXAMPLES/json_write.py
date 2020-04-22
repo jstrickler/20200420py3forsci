@@ -28,3 +28,4 @@ print(js)
 
 with open('george.json', 'w') as george_out:  # <3>
     json.dump(george, george_out, indent=4)  # <4>
+

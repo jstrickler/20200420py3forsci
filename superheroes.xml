@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='ASCII'?>
+<superheroes><superhero universe="DC"><name>Superman</name><secret_identity>Clark Kent</secret_identity><city>Metropolis</city></superhero><superhero universe="DC"><name>Batman</name><secret_identity>Bruce Wayne</secret_identity><city>Gotham City</city></superhero><superhero universe="Marvel"><name>Ant-man</name><secret_identity>Hank Pym</secret_identity><city>Chicago</city></superhero><superhero universe="DC"><name>Wonder Woman</name><secret_identity>Diana Prince</secret_identity><city>Los Angeles</city></superhero></superheroes>
