@@ -9,9 +9,12 @@ URL = "https://www.python.org/"
 def main():
     page_html = get_html(URL)
     print(page_html)
-    soup = BeautifulSoup(page_html, features='lxml')
-    print(soup.find_all('div', class_='copyright'))
 
+    tags = get_tags('div')
+
+def get_tags(html, tag):
+    soup = BeautifulSoup(html, features='lxml')
+    print(soup.find_all(tag))
 
     # response = requests(
     #     'my url',
