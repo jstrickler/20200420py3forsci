@@ -13,7 +13,14 @@ ws = wb.active
 ws.title = 'fruits'
 
 for i, fruit in enumerate(fruits, 1):
-    ws.cell(row=i, column=1).value = fruit
-    ws.cell(row=i, column=2).value = len(fruit)
+    column_1 = ws.cell(row=i, column=1)
+    column_1.value = fruit
+    column_1.font=px.styles.Font(color='00FF0000', name="Comic Sans", size=18)
+
+    column_2 = ws.cell(row=i, column=2)
+    column_2.value = len(fruit)
+
+ws2 = wb.create_sheet("other")
+ws2.cell(row=1, column=1).value = "Testing..."
 
 wb.save('fruits.xlsx')
