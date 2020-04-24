@@ -22,10 +22,14 @@ print(df)
 print()
 
 print_header("Triple each value")
-print(df * 3)
+dfx = df * 3
+print(dfx)
 print()  # <5>
 
 print_header("Multiply column gamma by 1.5")
 df['gamma'] *= 1.5  # <6>
-print(df)
-print()
+print(df, '\n')
+
+df[['beta', 'epsilon']] /= 2
+print(df, '\n')
+

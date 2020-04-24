@@ -28,3 +28,21 @@ print(df, '\n')
 
 print_header("df['gamma']")
 print(df['gamma'])  # <5>
+
+print_header("df['c':'c']")
+print(df['c':'c'])
+print()
+columns_wanted = ['alpha', 'gamma', 'beta']
+print(df[columns_wanted])
+
+# df[NAME]   column NAME
+# df[[NAME1, NAME2, ...]]   multiple columns
+# df[ARRAY-LIKE]   multiple columns
+# df[X:Y]    row slice from X to Y (Y exclusive if numeric, inclusive otherwise)
+
+
+
+
+df *= 100
+
+print(df)

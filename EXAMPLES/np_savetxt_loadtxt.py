@@ -18,7 +18,7 @@ np.savetxt(float_file_name, sample_data, delimiter=",", fmt="%5.2f")  # <3>
 
 int_file_name = 'save_data_int.txt'
 
-np.savetxt(int_file_name, sample_data, delimiter=",", fmt="%d")  # <4>
+np.savetxt(int_file_name, sample_data, delimiter="|", fmt="%d")  # <4>
 
 data = np.loadtxt(float_file_name, delimiter=",")  # <5>
 print(data)

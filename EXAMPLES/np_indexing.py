@@ -21,3 +21,10 @@ print()
 print('a[::2] =>', a[::2])  # <7>
 print()
 print('a[:3, -2:] =>', a[:3, -2:])  # <8>
+
+#   ARRAY[row-index-or-slice]
+#   ARRAY[row-index-or-slice, column-index-or-slice]
+#   ARRAY[:, column-index-or-slice]
+
+print(a[:,-1])  # all rows, last column
+print(a[-1])   # last row, all columns]

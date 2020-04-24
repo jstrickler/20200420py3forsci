@@ -12,7 +12,13 @@ s2 = pd.Series(np.linspace(1, 5, NUM_VALUES))  # <3>
 print("s1:", s1, "\n")
 print("s2:", s2, "\n")
 
+
+
 print("selecting elements")
+
+print(s1['h'], s1['a'])
+print(s2[3], s2[9])
+
 print(s1[['h', 'b']], "\n")  # <4>
 
 print(s1[['a', 'b', 'c']], "\n")  # <4>
@@ -30,11 +36,15 @@ print('a' in s1)  # <7>
 print('m' in s1)  # <7>
 print()
 
+print(s2[2:4])
+
+
 s3 = s1 * 10  # <8>
 print("s3 (which is s1 * 10)")
 print(s3, "\n")
 
 s1['e'] *= 5
+print("s1 after *5", s1)
 
 print("boolean mask where s3 > 25:")
 print(s3 > 25, "\n")  # <9>

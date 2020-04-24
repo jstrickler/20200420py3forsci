@@ -42,3 +42,12 @@ print()
 
 a += 1000  # <7>
 print(a)
+
+print(np.average(a))
+
+print(a @ b)
+
+print(a.shape, b.shape)
+
+print(a)
+print(a.transpose())

@@ -25,4 +25,9 @@ print(df2, '\n')
 
 print_header("After dropping rows b, c, and e")
 df3 = df.drop(['b', 'c', 'e'])  # <3>
-print(df3)
+print(df3, '\n')
+
+df.drop(['gamma', 'delta'], axis=1, inplace=True)
+df.drop(['b', 'f'], axis=0, inplace=True)
+print(df, '\n')
+
